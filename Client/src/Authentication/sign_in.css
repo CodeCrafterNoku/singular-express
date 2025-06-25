@@ -1,0 +1,169 @@
+body, .App {
+  background-color: #002D40;
+  min-height: 1080px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  width: 37.97px;
+  height: 37.97px;
+  background-color: #163e4f; /* Solid fill instead of border */
+  border-radius: 50%;
+  top: 40%;
+  left: 10%;
+  transform: translate(-50%, -50%) rotate(-85.5deg);
+  z-index: 10;
+  pointer-events: none;
+}
+body::before {
+  content: '';
+  position: fixed;
+  width: 249.26px;
+  height: 249.26px;
+  background-color: transparent;
+  border: 2px dotted #163e4f; /* Dotted border with the same color */
+  border-radius: 50%;
+  top: 25%;
+  left: 15%;
+  transform: translate(-50%, -50%) rotate(-85.5deg);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.App::before {
+  content: '';
+  position: fixed;
+  width: 147.19px;
+  height: 147.19px;
+  background-color: transparent;
+  border: 2.5px solid #163e4f; /* Bold solid border */
+  border-radius: 50%;
+  top: 15%;
+  left: 20%;
+  transform: translate(-50%, -50%) rotate(-85.5deg);
+  z-index: 0; 
+  pointer-events: none;
+}
+.App::after {
+  content: '';
+  position: fixed;
+  width: 180px;
+  height: 180px;
+  background-color: #163e4f;
+  border-radius: 50%;
+  top: 88%;
+  right: 78%;
+  transform: translate(50%, -50%) rotate(-45deg);
+  z-index: 0;
+  pointer-events: none;
+}
+.circle-three {
+  position: fixed;
+  width: 249.26px;
+  height: 249.26px;
+  background-color: transparent;
+  border: 2px solid #163e4f;
+  border-radius: 50%;
+  top: 83%;
+  right: 15%;
+  transform: translate(50%, -50%) rotate(-85.5deg);
+  z-index: 0;
+  pointer-events: none;
+}
+.signin-container {
+  width: 1187px;
+  min-height: 828px;
+  position: relative;
+  margin: 122.5px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  border-radius: 10px;
+  background: linear-gradient(
+    135deg,
+    #C4C4C5 0%,
+    #EEEEF1 20%,
+    #EFF1F3 40%,
+    #E7EAEB 60%,
+    #D6D6D9 80%,
+    #C4C4C5 100%
+  );
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  box-sizing: border-box;
+  z-index: 1; /* Lower z-index than the circle */
+}
+
+/* Rest of your CSS remains the same */
+.logo-container {
+  position: absolute;
+  width: 282px;
+  height: 75px;
+  top: 28.5px;
+  left: 61px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 8px;
+}
+
+.logo-bold {
+  font-family: 'Anek Bangla', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #002D40; 
+}
+
+.logo-light {
+  font-family: 'Anek Bangla', sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #006088;
+}
+
+.auth-content {
+  position: relative;
+  z-index: 2;
+  margin-top: 150px;
+  padding: 0 61px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-text {
+  margin-left: 569px;
+  width: 235px;
+  height: 59px;
+  color: #002D40;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 26px;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-image_Photoroom {
+  width: 1080px;
+  height: 1080px;
+  position: absolute;
+  top: -363.5px;
+  left: -273px;
+  transform: rotate(25deg);
+  object-fit: cover;
+}

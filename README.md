@@ -1,1 +1,1 @@
-# singular-express
+# SingularExpress

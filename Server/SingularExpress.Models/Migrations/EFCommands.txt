@@ -1,0 +1,41 @@
+﻿// SETUP - See bottom
+
+// TO GENERATE A MIGRATION
+// =======================
+// 'InitialMigration' is used as the name for the first migration
+// For delta migrations, {Name} should be a short description of the feature/change
+// Run the migration command in your solution root.
+dotnet ef migrations add InitialMigration --project SingularExpress.Models --context ModelDbContext
+dotnet ef migrations add {Name} --project SingularExpress.Models --context ModelDbContext
+
+// TO ROLLBACK MIGRATIONS IN THE DB TO A SPECIFIC MIGRATION
+// ========================================================
+dotnet ef database update {PreviousMigrationName} --project SingularExpress.Models --context ModelDbContext
+
+// TO REMOVE THE LAST ADDED MIGRATION FROM CODE
+// ============================================
+dotnet ef migrations remove --project SingularExpress.Models --context ModelDbContext
+
+// POST GENERATION
+// ===============
+// Once your migration file has been generated, add the following to the top to prevent build errors:
+
+#pragma warning disable
+
+// SETUP
+// =====
+// To generate migrations, you must have the EF Core CLI installed.
+// Reference: https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet
+
+// When using EF Core 2.x, the CLI should be included with the SDK, and you just need to install the Microsoft.EntityFrameworkCore.Design package:
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
+// To update your tools
+dotnet tool install --global dotnet-ef
+// To install latest version
+dotnet tool install --global dotnet-ef
+// To install a specific version
+dotnet tool install --global dotnet-ef --version {version}
+// To add Microsoft.EntityFrameworkCore.Design to your startup project
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
