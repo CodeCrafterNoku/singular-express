@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AIvXEeKab4k=",
+  "dgSpecHash": "fkEeD8DVmwA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
+  "projectFilePath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NNgema\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\NNgema\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2Yu+DoGpq7s=",
+  "dgSpecHash": "Z0tiApp18z4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj",
+  "projectFilePath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NNgema\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\NNgema\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

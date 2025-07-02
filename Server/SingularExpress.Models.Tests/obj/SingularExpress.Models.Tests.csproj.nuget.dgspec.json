@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj": {}
+    "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj": {
+    "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj",
         "projectName": "SingularExpress.Models.Tests",
-        "projectPath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj",
+        "projectPath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models.Tests\\SingularExpress.Models.Tests.csproj",
         "packagesPath": "C:\\Users\\NNgema\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models.Tests\\obj\\",
+        "outputPath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

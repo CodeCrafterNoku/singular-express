@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Api\\SingularExpress.Api.csproj": {}
+    "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Api\\SingularExpress.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Api\\SingularExpress.Api.csproj": {
+    "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Api\\SingularExpress.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Api\\SingularExpress.Api.csproj",
+        "projectUniqueName": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Api\\SingularExpress.Api.csproj",
         "projectName": "SingularExpress.Api",
-        "projectPath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Api\\SingularExpress.Api.csproj",
+        "projectPath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Api\\SingularExpress.Api.csproj",
         "packagesPath": "C:\\Users\\NNgema\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Api\\obj\\",
+        "outputPath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj": {
-                "projectPath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj"
+              "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj": {
+                "projectPath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj"
               }
             }
           }
@@ -106,14 +106,14 @@
         }
       }
     },
-    "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj": {
+    "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
+        "projectUniqueName": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
         "projectName": "SingularExpress.Models",
-        "projectPath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
+        "projectPath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
         "packagesPath": "C:\\Users\\NNgema\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\obj\\",
+        "outputPath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
