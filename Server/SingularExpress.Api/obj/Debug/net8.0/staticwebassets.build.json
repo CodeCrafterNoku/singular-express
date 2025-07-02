@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "4PDZr2AVmYoxqMItogKp1xfoXfIvZRI1wMTq1qDRiOk=",
+  "Source": "SingularExpress.Api",
+  "BasePath": "_content/SingularExpress.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

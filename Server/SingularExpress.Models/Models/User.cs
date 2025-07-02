@@ -31,5 +31,9 @@ namespace SingularExpress.Models.Models
 
     public DateTime? ModifiedOn { get; set; }
 
+    public int FailedLoginAttempts { get; set; } = 0;
+    public DateTime? LockoutEnd { get; set; }
+
+
   }
 }

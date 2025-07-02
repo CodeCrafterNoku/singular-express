@@ -1,0 +1,15 @@
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\bin\Debug\net8.0\SingularExpress.Models.deps.json
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\bin\Debug\net8.0\SingularExpress.Models.runtimeconfig.json
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\bin\Debug\net8.0\SingularExpress.Models.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\bin\Debug\net8.0\SingularExpress.Models.pdb
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\SingularExpress.Models.csproj.AssemblyReference.cache
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\SingularExpress.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\SingularExpress.Models.AssemblyInfoInputs.cache
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\SingularExpress.Models.AssemblyInfo.cs
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\SingularExpress.Models.csproj.CoreCompileInputs.cache
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\SingularExpress.Models.sourcelink.json
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\SingularExpress.Models.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\refint\SingularExpress.Models.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\SingularExpress.Models.pdb
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\SingularExpress.Models.genruntimeconfig.cache
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Models\obj\Debug\net8.0\ref\SingularExpress.Models.dll

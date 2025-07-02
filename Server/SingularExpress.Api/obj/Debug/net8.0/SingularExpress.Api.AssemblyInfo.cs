@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SingularExpress.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64ab28acb3cfccaf36ca3995af67cf8f68a7c49f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c632d79bb4a461d7cbb45d6f4d7b677d0bd90e5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SingularExpress.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SingularExpress.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

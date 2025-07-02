@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj": {}
+    "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj": {
+    "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
+        "projectUniqueName": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
         "projectName": "SingularExpress.Models",
-        "projectPath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
+        "projectPath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\SingularExpress.Models.csproj",
         "packagesPath": "C:\\Users\\NNgema\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NNgema\\Music\\singular-express\\Server\\SingularExpress.Models\\obj\\",
+        "outputPath": "C:\\Users\\NNgema\\Documents\\SingularExpressHR_2\\SingularExpress\\Server\\SingularExpress.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,18 +50,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Http": {
-              "target": "Package",
-              "version": "[2.3.0, )"
-            },
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.3.1, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Core": {
-              "target": "Package",
-              "version": "[2.3.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.6, )"
@@ -75,6 +63,12 @@
               "version": "[9.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.6, )"
             },

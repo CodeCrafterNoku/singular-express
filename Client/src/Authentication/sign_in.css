@@ -4,101 +4,38 @@ body, .App {
   margin: 0;
   padding: 0;
   position: relative;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+.auth-content {
+  display: flex;
+  flex-direction: row; /* make columns side by side */
+  width: 100%;
+  
+  
 }
 
-body::after {
-  content: '';
-  position: fixed;
-  width: 37.97px;
-  height: 37.97px;
-  background-color: #163e4f; /* Solid fill instead of border */
-  border-radius: 50%;
-  top: 40%;
-  left: 10%;
-  transform: translate(-50%, -50%) rotate(-85.5deg);
-  z-index: 10;
-  pointer-events: none;
-}
-body::before {
-  content: '';
-  position: fixed;
-  width: 249.26px;
-  height: 249.26px;
-  background-color: transparent;
-  border: 2px dotted #163e4f; /* Dotted border with the same color */
-  border-radius: 50%;
-  top: 25%;
-  left: 15%;
-  transform: translate(-50%, -50%) rotate(-85.5deg);
-  z-index: 10;
-  pointer-events: none;
+body::after, body::before, .App::before, .App::after, .circle-three {
+  /* Existing styles */
 }
 
-.App::before {
-  content: '';
-  position: fixed;
-  width: 147.19px;
-  height: 147.19px;
-  background-color: transparent;
-  border: 2.5px solid #163e4f; /* Bold solid border */
-  border-radius: 50%;
-  top: 15%;
-  left: 20%;
-  transform: translate(-50%, -50%) rotate(-85.5deg);
-  z-index: 0; 
-  pointer-events: none;
-}
-.App::after {
-  content: '';
-  position: fixed;
-  width: 180px;
-  height: 180px;
-  background-color: #163e4f;
-  border-radius: 50%;
-  top: 88%;
-  right: 78%;
-  transform: translate(50%, -50%) rotate(-45deg);
-  z-index: 0;
-  pointer-events: none;
-}
-.circle-three {
-  position: fixed;
-  width: 249.26px;
-  height: 249.26px;
-  background-color: transparent;
-  border: 2px solid #163e4f;
-  border-radius: 50%;
-  top: 83%;
-  right: 15%;
-  transform: translate(50%, -50%) rotate(-85.5deg);
-  z-index: 0;
-  pointer-events: none;
-}
 .signin-container {
   width: 1187px;
-  min-height: 828px;
+  height: 828px !important; /* Set a fixed height */
   position: relative;
   margin: 122.5px auto;
   display: flex;
   flex-direction: row;
   gap: 19px;
   border-radius: 10px;
-  background: linear-gradient(
-    135deg,
-    #C4C4C5 0%,
-    #EEEEF1 20%,
-    #EFF1F3 40%,
-    #E7EAEB 60%,
-    #D6D6D9 80%,
-    #C4C4C5 100%
-  );
+  background: #f9f9fc;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   padding: 40px;
   box-sizing: border-box;
-  z-index: 1; /* Lower z-index than the circle */
+  z-index: 1;
+  overflow: hidden; /* Prevent content from overflowing */
 }
 
-/* Rest of your CSS remains the same */
 .logo-container {
   position: absolute;
   width: 282px;
@@ -109,23 +46,23 @@ body::before {
   align-items: center;
   padding: 0 15px;
   border-radius: 8px;
+  z-index: 10; 
 }
 
-.logo-bold {
+.logo-bold, .logo-light {
   font-family: 'Anek Bangla', sans-serif;
-  font-weight: 700;
   font-size: 40px;
   line-height: 100%;
   letter-spacing: 0.02em;
+}
+
+.logo-bold {
+  font-weight: 700;
   color: #002D40; 
 }
 
 .logo-light {
-  font-family: 'Anek Bangla', sans-serif;
-  font-weight: 200;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0.02em;
+  font-weight: 300;
   color: #006088;
 }
 
@@ -139,23 +76,158 @@ body::before {
 .column {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end; /* Align columns to the right */
 }
 
+.left-inner-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+  left: 350px; /* You can adjust this value to move it more or less */
+}
+
+
 .welcome-text {
-  margin-left: 569px;
-  width: 235px;
-  height: 59px;
+  text-align: right; /* Align text to the right */
+  margin-top: -40px;
   color: #002D40;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 26px;
   letter-spacing: 0;
+  position: relative;
+  right: -20px; 
+  margin-bottom:60px ;
+}
+
+.log-details {
+  display: flex;
+  flex-direction: column; 
+  width: 324px; 
+  gap: 17px;     
+  margin-top: 20px;
+}
+
+.input-group {
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 324px; 
+  height: 33px; 
+  padding: 5px; 
+  border-bottom: 1.5px solid var(--Calm-Blue, #006088); 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  gap: 5px; 
+  
+}
+
+.input-icon-mail {
+  width: 24px;
+  height: 24px;
+  margin-top: 0px; 
+  margin-left: 2px;
+}
+.input-icon-key {
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+.input-field {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #002D40; 
+  font-family: 'Instrument Sans', sans-serif; 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px; 
+  letter-spacing: 0;
+  padding-left: 5px; 
+  height: 26px; 
+}
+.input-field::placeholder {
+  color: #002D40;
+  opacity: 1; 
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #002D40; 
+  font-family: 'Instrument Sans', sans-serif; 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px; 
+  letter-spacing: 0;
+  padding-left: 5px; 
+  height: 26px; 
+}
+
+
+.visibility-icon {
+  width: 20px; 
+  height: 20px; 
+  margin-left: 5px;
+}
+
+.sign-in-button {
+  width: 386px; 
+  height: 37px; 
+  background-color: #006088; 
+  border: none;
+  border-radius: 10px; 
+  color: white; 
+  font-family: 'Instrument Sans', sans-serif; 
+  font-weight: 600;
+  font-size: 14px; 
+  line-height: 26px; 
+  letter-spacing: 0; 
+  padding: 0 39px; 
+  cursor: pointer; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 10px; 
+  position: relative;
+  left: 0px; 
+  margin-left: 34px;
+}
+
+.forgot-password {
+  width: 324px; 
+  height: 26px; 
+  font-family: 'Instrument Sans', sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 0px; 
+  font-weight: 400; 
+  font-size: 12px; 
+  line-height: 26px; 
+  letter-spacing: 0.5px; 
+  color: #002D40; 
+  text-align: right; /* Align text to the right */
+  text-decoration: underline; 
+  margin-top: 10px; 
+  position: relative;
+  left: -50px; 
+}
+
+.footer-text {
+  width: 304px; 
+  height: 52px; 
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 400; 
+  font-size: 12px; 
+  line-height: 26px; 
+  letter-spacing: 0; 
+  color: #002D40; 
+  text-align: right; /* Align text to the right */
+  margin-top: 20px; 
 }
 
 .signin-image_Photoroom {
@@ -167,3 +239,15 @@ body::before {
   transform: rotate(25deg);
   object-fit: cover;
 }
+.right-column-image {
+  position: relative;
+  left: -605px;  /* Move 50px to the left, adjust as needed */
+  top: -188px;
+
+}
+.adjusted-content {
+  margin-top: -330px; /* Adjust to move it up */
+  margin-left: 9px !important;
+  position: relative; /* Ensure positioning is relative */
+}
+
