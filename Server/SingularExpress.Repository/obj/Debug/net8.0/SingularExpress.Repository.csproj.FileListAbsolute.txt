@@ -1,0 +1,12 @@
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\bin\Debug\net8.0\SingularExpress.Repository.deps.json
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\bin\Debug\net8.0\SingularExpress.Repository.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\bin\Debug\net8.0\SingularExpress.Repository.pdb
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\obj\Debug\net8.0\SingularExpress.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\obj\Debug\net8.0\SingularExpress.Repository.AssemblyInfoInputs.cache
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\obj\Debug\net8.0\SingularExpress.Repository.AssemblyInfo.cs
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\obj\Debug\net8.0\SingularExpress.Repository.csproj.CoreCompileInputs.cache
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\obj\Debug\net8.0\SingularExpress.Repository.sourcelink.json
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\obj\Debug\net8.0\SingularExpress.Repository.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\obj\Debug\net8.0\refint\SingularExpress.Repository.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\obj\Debug\net8.0\SingularExpress.Repository.pdb
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Repository\obj\Debug\net8.0\ref\SingularExpress.Repository.dll

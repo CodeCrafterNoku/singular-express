@@ -1,0 +1,12 @@
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\bin\Debug\net8.0\SingularExpress.App.deps.json
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\bin\Debug\net8.0\SingularExpress.App.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\bin\Debug\net8.0\SingularExpress.App.pdb
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\obj\Debug\net8.0\SingularExpress.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\obj\Debug\net8.0\SingularExpress.App.AssemblyInfoInputs.cache
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\obj\Debug\net8.0\SingularExpress.App.AssemblyInfo.cs
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\obj\Debug\net8.0\SingularExpress.App.csproj.CoreCompileInputs.cache
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\obj\Debug\net8.0\SingularExpress.App.sourcelink.json
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\obj\Debug\net8.0\SingularExpress.App.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\obj\Debug\net8.0\refint\SingularExpress.App.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\obj\Debug\net8.0\SingularExpress.App.pdb
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.App\obj\Debug\net8.0\ref\SingularExpress.App.dll

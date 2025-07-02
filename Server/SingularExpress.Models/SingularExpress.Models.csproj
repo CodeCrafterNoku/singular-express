@@ -27,11 +27,6 @@
 
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.6" />
 
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.6">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-
 
 
     <!-- Configuration packages -->
@@ -45,6 +40,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.6" />
 
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.6" />
+
+    
 
   </ItemGroup>
 

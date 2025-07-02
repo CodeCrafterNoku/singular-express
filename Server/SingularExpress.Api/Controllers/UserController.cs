@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authentication; // For sign-in functionality
 using System.Security.Claims; // For claims identity
+using SingularExpress.Models;
 
 
 
@@ -22,13 +23,29 @@ namespace SingularExpress.Controllers
         private readonly IUserRepository _userRepository;
         private readonly PasswordHasher<User> _passwordHasher;
         private readonly ILogger<UserController> _logger;
+        private readonly ModelDbContext _context;
+        private readonly IEmailService _emailService;
 
-        public UserController(IUserRepository userRepository, ILogger<UserController> logger)
+        // Updated constructor with new dependencies injected
+        public UserController(
+            IUserRepository userRepository,
+            ILogger<UserController> logger,
+            ModelDbContext context,
+            IEmailService emailService)
         {
             _userRepository = userRepository;
             _passwordHasher = new PasswordHasher<User>();
             _logger = logger;
+            _context = context;
+            _emailService = emailService;
         }
+
+        // public UserController(IUserRepository userRepository, ILogger<UserController> logger)
+        // {
+        //     _userRepository = userRepository;
+        //     _passwordHasher = new PasswordHasher<User>();
+        //     _logger = logger;
+        // }
 
         private bool IsValidPassword(string password)
         {
@@ -223,16 +240,80 @@ namespace SingularExpress.Controllers
                 return Unauthorized("Invalid email or password.");
             }
 
+            // ✅ Check if account is locked
+            if (user.LockoutEnd.HasValue && user.LockoutEnd.Value > DateTime.UtcNow)
+            {
+                _logger.LogWarning("Login failed: account is locked.");
+                return Unauthorized($"Account is locked. Try again after {user.LockoutEnd.Value}.");
+            }
+
             var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, loginDto.Password);
+
             if (result == PasswordVerificationResult.Failed)
             {
+                user.FailedLoginAttempts++;
+
+                if (user.FailedLoginAttempts >= 3)
+                {
+                    user.LockoutEnd = DateTime.UtcNow.AddMinutes(30); // Configurable lockout duration
+                    _userRepository.UpdateUser(user); // Make sure this persists the change
+                    _logger.LogWarning("Account locked due to multiple failed login attempts.");
+                    return Unauthorized("Account locked due to multiple failed login attempts.");
+                }
+
+                _userRepository.UpdateUser(user); // Save incremented attempts
                 _logger.LogWarning("Login failed: password mismatch.");
                 return Unauthorized("Invalid email or password.");
             }
 
-            // You can later generate a JWT token here if needed
+            // ✅ Reset failed attempts on successful login
+            user.FailedLoginAttempts = 0;
+            user.LockoutEnd = null;
+            _userRepository.UpdateUser(user); // Save reset state
+
+            // TODO: Generate and return JWT token if needed
             return Ok("Login successful.");
         }
+            
+            [HttpPost("forgot-password")]
+            [ProducesResponseType(200)]
+            [ProducesResponseType(500)]
+            public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordDto dto)
+            {
+                try
+                {
+                    var user = _userRepository.GetUserByEmail(dto.Email);
+                    if (user == null)
+                    {
+                        // Security: Don't reveal if user doesn't exist
+                        return Ok("If an account with this email exists, a reset code has been sent.");
+                    }
+
+                    var otp = new Random().Next(100000, 999999).ToString();
+                    
+                    _context.PasswordResetTokens.Add(new PasswordResetToken
+                    {
+                        Email = dto.Email,
+                        Otp = otp,
+                        ExpiresAt = DateTime.UtcNow.AddMinutes(30)
+                    });
+                    await _context.SaveChangesAsync();
+
+                    await _emailService.SendPasswordResetEmailAsync(
+                        dto.Email,
+                        otp,
+                        $"{user.FirstName} {user.LastName}"
+                    );
+
+                    return Ok("If an account with this email exists, a reset code has been sent.");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Error in ForgotPassword");
+                    return StatusCode(500, "An error occurred while processing your request.");
+                }
+            }
+
 
 
 

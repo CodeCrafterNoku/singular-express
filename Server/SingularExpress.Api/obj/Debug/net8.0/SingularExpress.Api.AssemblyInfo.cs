@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5aa78df6-c124-4fc6-a523-d56c432b917d")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SingularExpress.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39e030a7b6da138ac23ea2a50c7bec58e5b573d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca78ae0da9cbcda9884857b158591da606608fc5")]
 [assembly: System.Reflection.AssemblyProductAttribute("SingularExpress.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SingularExpress.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

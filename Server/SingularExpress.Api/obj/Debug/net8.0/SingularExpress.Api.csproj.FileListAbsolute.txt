@@ -54,6 +54,9 @@ C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExp
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\SendGrid.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\StarkbankEcdsa.dll
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -156,6 +159,8 @@ C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExp
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\SingularExpress.Models.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\SingularExpress.Repository.dll
+C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\SingularExpress.Repository.pdb
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\bin\Debug\net8.0\SingularExpress.Models.pdb
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\obj\Debug\net8.0\SingularExpress.Api.csproj.AssemblyReference.cache
 C:\Users\NNgema\Documents\SingularExpressHR_2\SingularExpress\Server\SingularExpress.Api\obj\Debug\net8.0\SingularExpress.Api.GeneratedMSBuildEditorConfig.editorconfig

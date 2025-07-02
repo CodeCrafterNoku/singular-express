@@ -28,7 +28,7 @@ body::after, body::before, .App::before, .App::after, .circle-three {
   flex-direction: row;
   gap: 19px;
   border-radius: 10px;
-  background: #f9f9fc;
+  background: #dedee0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   padding: 40px;
   box-sizing: border-box;

@@ -3,12 +3,16 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using SingularExpress.Interfaces;
 using SingularExpress.Repository;
+using SingularExpress.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Register ModelDbContext
 builder.Services.AddDbContext<ModelDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        sqlOptions => sqlOptions.MigrationsAssembly("SingularExpress.Models")));
+
 
 // Add services
 builder.Services.AddControllers();
@@ -28,6 +32,9 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddScoped<ModelDbContextFactory>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+
+
 
 var app = builder.Build();
 
