@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using SingularExpress.Interfaces;
 using SingularExpress.Repository;
+using SingularExpress.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddScoped<ModelDbContextFactory>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<UserLockoutService>();
 
 var app = builder.Build();
 

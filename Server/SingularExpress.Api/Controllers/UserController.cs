@@ -7,11 +7,7 @@ using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authentication; // For sign-in functionality
 using System.Security.Claims; // For claims identity
-
-
-
-
-
+using SingularExpress.Api.Services;
 
 namespace SingularExpress.Controllers
 {
@@ -22,12 +18,14 @@ namespace SingularExpress.Controllers
         private readonly IUserRepository _userRepository;
         private readonly PasswordHasher<User> _passwordHasher;
         private readonly ILogger<UserController> _logger;
+        private readonly UserLockoutService _lockoutService;
 
-        public UserController(IUserRepository userRepository, ILogger<UserController> logger)
+        public UserController(IUserRepository userRepository, ILogger<UserController> logger, UserLockoutService lockoutService)
         {
             _userRepository = userRepository;
             _passwordHasher = new PasswordHasher<User>();
             _logger = logger;
+            _lockoutService = lockoutService;
         }
 
         private bool IsValidPassword(string password)
@@ -214,8 +212,21 @@ namespace SingularExpress.Controllers
         [HttpPost("login")]
         [ProducesResponseType(200)]
         [ProducesResponseType(401)]
-        public IActionResult Login([FromBody] LoginDto loginDto)
+        [ProducesResponseType(423)] // Locked account
+        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
+            // Check if user is currently locked out
+            var isLockedOut = await _lockoutService.IsUserLockedOutAsync(loginDto.Email);
+            if (isLockedOut)
+            {
+                var remainingTime = await _lockoutService.GetRemainingLockoutTimeAsync(loginDto.Email);
+                _logger.LogWarning("Login attempt blocked: user {Email} is locked out.", loginDto.Email);
+                return StatusCode(423, new { 
+                    message = "Account is temporarily locked due to multiple failed login attempts.", 
+                    remainingLockoutTime = remainingTime?.ToString(@"mm\:ss")
+                });
+            }
+
             var user = _userRepository.GetUserByEmail(loginDto.Email);
             if (user == null)
             {
@@ -226,12 +237,30 @@ namespace SingularExpress.Controllers
             var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, loginDto.Password);
             if (result == PasswordVerificationResult.Failed)
             {
-                _logger.LogWarning("Login failed: password mismatch.");
+                // Record failed login attempt
+                await _lockoutService.RecordFailedLoginAttemptAsync(loginDto.Email);
+                _logger.LogWarning("Login failed: password mismatch for user {Email}. Failed attempts recorded.", loginDto.Email);
+                
+                // Check if user is now locked out
+                isLockedOut = await _lockoutService.IsUserLockedOutAsync(loginDto.Email);
+                if (isLockedOut)
+                {
+                    var remainingTime = await _lockoutService.GetRemainingLockoutTimeAsync(loginDto.Email);
+                    return StatusCode(423, new { 
+                        message = "Account has been locked due to multiple failed login attempts.", 
+                        remainingLockoutTime = remainingTime?.ToString(@"mm\:ss")
+                    });
+                }
+                
                 return Unauthorized("Invalid email or password.");
             }
 
+            // Successful login - reset failed attempts
+            await _lockoutService.ResetFailedLoginAttemptsAsync(loginDto.Email);
+            _logger.LogInformation("User {Email} logged in successfully.", loginDto.Email);
+
             // You can later generate a JWT token here if needed
-            return Ok("Login successful.");
+            return Ok(new { message = "Login successful.", userId = user.UserId });
         }
 
 

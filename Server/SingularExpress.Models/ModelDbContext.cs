@@ -18,5 +18,10 @@ namespace SingularExpress.Models
     /// Gets or sets the Users
     /// </summary>
     public DbSet<User> Users { get; set; }
+
+    /// <summary>
+    /// Gets or sets the PasswordResetTokens
+    /// </summary>
+    public DbSet<PasswordResetTokens> PasswordResetTokens { get; set; }
   }
 }
