@@ -31,5 +31,14 @@ namespace SingularExpress.Models.Models
 
     public DateTime? ModifiedOn { get; set; }
 
+    // Authentication locking properties
+    public int FailedLoginAttempts { get; set; } = 0;
+    
+    public bool IsLockedOut { get; set; } = false;
+    
+    public DateTime? LockoutEnd { get; set; }
+    
+    public DateTime? LastLoginAttempt { get; set; }
+
   }
 }
